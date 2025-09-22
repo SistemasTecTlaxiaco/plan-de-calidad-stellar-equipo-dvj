@@ -1,122 +1,131 @@
-# Plan de Calidad Simplificado  
-Proyecto: Tracee — Stellar Community Fund (SCF)  
-Link oficial: [Tracee en Stellar Community Fund](https://communityfund.stellar.org/dashboard/submissions/recMi36KGHYwtBcZl)
 
----
+ Plan de Calidad del Proyecto **BlockSys Stellar** – SCF
 
 ## 1. Introducción
+Este documento presenta el **Plan de Calidad** del proyecto **BlockSys Stellar**, una iniciativa desarrollada en el marco del **Stellar Community Fund (SCF)** y orientada a estudiantes y profesionales de **Ingeniería en Sistemas Computacionales**.
 
-Este documento presenta un Plan de Calidad simplificado para el proyecto **Tracee**, seleccionado en el Stellar Community Fund (SCF).  
-Tracee es una solución de pagos transfronterizos que busca facilitar transferencias rápidas, seguras y económicas para ONGs, pequeñas empresas y personas, con especial enfoque en la inclusión financiera en la región MENA.  
+El objetivo de BlockSys Stellar es **crear una plataforma académica y práctica** que permita a los usuarios comprender, diseñar e implementar soluciones distribuidas utilizando la red Stellar. A través de este proyecto, se busca reforzar conocimientos en áreas clave como blockchain, sistemas distribuidos, seguridad, bases de datos y desarrollo de software.
 
-El plan está inspirado en los principios de **MoProSoft**, con el objetivo de asegurar que el producto final cumpla con estándares de la industria y las expectativas de la comunidad.
-
----
-
-## 2. Gestión de la Calidad del Proyecto
-
-La calidad se gestiona de manera continua durante todas las fases del proyecto: planificación, desarrollo, pruebas, despliegue y mantenimiento.
-
-### 2.1 Métricas de Calidad
-
-| Área | Métrica | Objetivo |
-|---|---|---|
-| Código | Cobertura de pruebas unitarias | ≥ 80 % del código |
-| Código | Número de vulnerabilidades críticas | 0 en producción |
-| Requisitos / Diseño | Aprobación de requisitos definidos antes del desarrollo | 100 % |
-| Usabilidad | Satisfacción de usuarios en pruebas de campo | ≥ 4 de 5 |
-| Rendimiento | Tiempo de respuesta en transacciones | < 2 segundos |
-| Seguridad | Cumplimiento de estándares de cifrado y resguardo de llaves | 100 % |
+Este plan sigue los lineamientos de **MoProSoft** y las buenas prácticas de calidad en desarrollo de software, asegurando que el producto final sea confiable, seguro, mantenible y cumpla con las expectativas de la comunidad académica y tecnológica.
 
 ---
 
-## 3. Procedimientos y Actividades de Calidad
+## 2. Alcance
+El plan de calidad se aplicará a todas las fases del ciclo de vida del proyecto **BlockSys Stellar**:
+- Planificación y definición de requisitos.  
+- Diseño de arquitectura (sistema, base de datos, contratos inteligentes, APIs).  
+- Implementación de módulos (backend, frontend y contratos en Stellar).  
+- Pruebas unitarias, de integración, de seguridad y de aceptación.  
+- Despliegue en red Stellar (testnet/mainnet).  
+- Documentación y entrega a la comunidad.  
 
-### 3.1 Procedimientos de Revisión
-
-- **Revisión de Requisitos**  
-  Validación con ONGs y empresas piloto para asegurar claridad y viabilidad técnica.  
-
-- **Revisión de Diseño**  
-  Arquitectura revisada por el equipo técnico para anticipar problemas de escalabilidad y seguridad.  
-
-- **Revisión de Código (Code Review)**  
-  Todo cambio pasa por *pull requests* revisados por al menos un miembro adicional del equipo.
-
-### 3.2 Políticas de Pruebas
-
-- **Pruebas Unitarias**: Automatizadas para cada componente.  
-- **Pruebas de Integración**: Validación de interoperabilidad entre módulos de pagos, seguridad y conversión.  
-- **Pruebas de Aceptación de Usuario (UAT)**: Ejecución con grupos piloto de ONGs/usuarios reales.  
-- **Pruebas de Seguridad**: Auditorías internas y, de ser posible, externas sobre cifrado y contratos inteligentes.  
-- **Pruebas de Rendimiento**: Simulaciones de carga en operaciones críticas.
+El alcance incluye tanto los componentes técnicos (software) como la documentación académica y los materiales de apoyo para estudiantes y desarrolladores.
 
 ---
 
-## 4. Gestión de la Configuración y Liberación
+## 3. Gestión de la Calidad del Proyecto
 
-- **Control de Versiones**  
-  Uso de GitHub con ramas `main`, `develop` y `feature/*`.  
+### 3.1. Objetivos de Calidad
+- Garantizar que los módulos de BlockSys Stellar funcionen correctamente y de manera integrada.  
+- Cumplir con estándares de **seguridad, escalabilidad y rendimiento** propios de soluciones sobre Stellar.  
+- Desarrollar una experiencia de usuario intuitiva para estudiantes y desarrolladores.  
+- Generar documentación clara, completa y útil para fines académicos y profesionales.  
 
-- **Etiquetado de Versiones**  
-  Versionado semántico (ej. v1.0.0).  
+### 3.2. Métricas de Calidad
 
-- **Plan de Liberación**  
-  Cada versión documentará funcionalidades, cronograma de despliegue, procedimientos de rollback y comunicación a la comunidad.
+**Métricas de Código**
+- Cobertura de pruebas unitarias: **≥80%**.  
+- Cumplimiento de estándares de estilo (lint): **100% del código revisado**.  
+- Errores críticos en QA: **<5 por versión**.  
 
----
+**Métricas de Requisitos y Diseño**
+- Cumplimiento de requisitos funcionales: **≥95%**.  
+- Retroalimentación de estudiantes en pruebas piloto: **≥4/5 estrellas**.  
 
-## 5. Documentación
-
-- **Documentación de Código**: Comentarios y guías de estilo consistentes.  
-- **Manual de Usuario**: Guía simple para ONGs/empresas sobre uso de la plataforma.  
-- **Documentación de Arquitectura**: Diagramas de componentes, seguridad y flujos de datos.  
-- **Guía de Despliegue**: Pasos para levantar ambientes de prueba y producción.
-
----
-
-## 6. Responsabilidades
-
-| Rol | Responsabilidad |
-|---|---|
-| Líder de Proyecto | Cumplimiento del plan de calidad y coordinación con SCF |
-| Arquitecto Técnico | Revisar diseño y seguridad de la arquitectura |
-| Desarrolladores | Implementación de código y pruebas unitarias |
-| QA | Ejecución de pruebas de integración, rendimiento y seguridad |
-| Documentación | Mantenimiento de guías técnicas y manual de usuario |
+**Métricas de Desempeño**
+- Tiempo promedio de respuesta en transacciones Stellar: **≤5 segundos**.  
+- Disponibilidad del sistema: **≥99% durante pruebas de carga**.  
 
 ---
 
-## 7. Cronograma y Hitos de Calidad
+## 4. Procedimientos y Actividades de Calidad
 
-| Fase | Hito | Fecha Estimada |
-|---|---|---|
-| Requerimientos | Requisitos aprobados por stakeholders | Semana 2 |
-| Diseño | Arquitectura y mockups revisados | Semana 3 |
-| MVP | Funcionalidades clave + pruebas unitarias | Semana 6 |
-| QA | Pruebas de integración y seguridad | Semana 8 |
-| UAT | Feedback de usuarios piloto integrado | Semana 9 |
-| Lanzamiento | Versión 1.0 con documentación completa | Semana 10 |
+### 4.1. Procedimientos de Revisión
+- **Revisión de Requisitos:** Validación de requisitos con el equipo de desarrollo y docentes de Ingeniería en Sistemas.  
+- **Revisión de Diseño:** Validación de arquitectura (smart contracts, APIs, base de datos, UI/UX).  
+- **Revisión de Código (Code Review):** Todos los cambios deben ser revisados y aprobados antes de integrarse a la rama principal.  
 
----
-
-## 8. Mejora Continua
-
-Al cierre de cada sprint:  
-- Revisar métricas de calidad y compararlas con objetivos.  
-- Registrar lecciones aprendidas.  
-- Ajustar procesos según retroalimentación de usuarios y comunidad SCF.  
+### 4.2. Políticas de Pruebas
+- **Pruebas Unitarias:** En contratos inteligentes y módulos del backend.  
+- **Pruebas de Integración:** Validación del flujo completo de transacciones en Stellar.  
+- **Pruebas de Seguridad:** Auditoría de vulnerabilidades comunes (ej. overflow, reentrancy).  
+- **Pruebas de Usabilidad (UAT):** Grupo de estudiantes prueba la interfaz y reporta mejoras.  
+- **Pruebas de Carga:** Simulación de múltiples transacciones simultáneas para validar estabilidad.  
 
 ---
 
-## 9. Aprobación
+## 5. Gestión de la Configuración y Liberación
 
-El presente plan será revisado y aprobado por:  
+- **Control de Versiones:**  
+  - Uso de **GitHub** con ramas: `main` (producción), `develop` (desarrollo), `feature/*`.  
+  - Pull requests obligatorios con revisiones de calidad.  
 
-- Equipo de desarrollo Tracee  
-- Equipo de QA  
-- Representante del SCF  
+- **Etiquetado de Versiones:**  
+  - Estándar **SemVer (ej. v1.0.0)**.  
+  - Registro de cambios (*changelog*).  
+
+- **Plan de Liberación:**  
+  - Cada versión documenta nuevas funcionalidades y correcciones.  
+  - Publicación de versiones en GitHub Releases y canales SCF.  
+  - Pruebas previas en **Stellar Testnet** antes de migrar a mainnet.  
 
 ---
 
-*Fin del Plan de Calidad Simplificado para Tracee*
+## 6. Documentación
+
+El proyecto contará con documentación actualizada y accesible para la comunidad:  
+- **Documentación de Código:** Comentarios y guías técnicas.  
+- **Manual del Usuario:** Instrucciones para registro, transacciones y consultas.  
+- **Documentación Técnica:**  
+  - Diagramas de arquitectura del sistema.  
+  - Flujos de datos y procesos.  
+  - Esquema de interacción con la red Stellar.  
+- **Guías Académicas:** Material de apoyo para estudiantes de Ingeniería en Sistemas.  
+
+---
+
+## 7. Roles y Responsabilidades
+
+- **Líder de Calidad:** Supervisa la implementación del plan y valida métricas.  
+- **Equipo de Desarrollo:** Implementa requisitos, realiza pruebas unitarias y mantiene documentación.  
+- **Tester/QA:** Ejecuta pruebas de seguridad, carga y aceptación.  
+- **Docentes/Usuarios Piloto:** Validan la calidad académica y técnica del proyecto.  
+
+---
+
+## 8. Gestión de Riesgos de Calidad
+
+| Riesgo | Impacto | Mitigación |  
+|--------|---------|------------|  
+| Vulnerabilidades en contratos inteligentes | Alto | Auditorías externas y revisiones de seguridad |  
+| Baja adopción por complejidad técnica | Medio | Simplificar interfaz y guías académicas |  
+| Retrasos en entregables | Medio | Uso de metodologías ágiles (Scrum/Kanban) |  
+| Problemas de integración con Stellar Horizon | Alto | Pruebas continuas en testnet antes de producción |  
+
+---
+
+## 9. Control y Seguimiento
+- Reuniones semanales de revisión de calidad.  
+- Seguimiento con tableros Kanban (Trello, Jira o GitHub Projects).  
+- Reportes de calidad por sprint:  
+  - Cobertura de pruebas.  
+  - Defectos encontrados.  
+  - Retroalimentación de usuarios.  
+
+---
+
+## 10. Conclusión
+El Plan de Calidad de **BlockSys Stellar** establece las bases para desarrollar un proyecto académico y profesional que integre los conocimientos de Ingeniería en Sistemas Computacionales con la tecnología blockchain de Stellar.  
+
+La combinación de **estándares de calidad, métricas claras, pruebas rigurosas y documentación accesible** garantiza que el producto sea confiable, seguro, útil y con impacto tanto en la comunidad educativa como en el ecosistema Stellar.
+
