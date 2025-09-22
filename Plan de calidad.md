@@ -1,5 +1,14 @@
+Materia: Ingeniería en Sistemas Computacionales
 
- Plan de Calidad del Proyecto **BlockSys Stellar** – SCF
+Actividad: Plan de Calidad del Proyecto **BlockSys Stellar** – SCF
+
+Estudiantes:
+
+ * Cruz Ramírez Jaczibeth
+ * Cruz Ortiz Vanessa
+ * Velasco López Daniel
+
+----------
 
 ## 1. Introducción
 Este documento presenta el **Plan de Calidad** del proyecto **BlockSys Stellar**, una iniciativa desarrollada en el marco del **Stellar Community Fund (SCF)** y orientada a estudiantes y profesionales de **Ingeniería en Sistemas Computacionales**.
